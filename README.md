@@ -23,17 +23,17 @@ sudo reboot
 
 #Required packages for Pipsta
 sudo apt-get install python-pip python-dev  
+sudo apt-get install libffi-dev  
+sudo apt-get install python-mysqldb 
+sudo apt-get install python-qt4  
+sudo apt-get install libusb-dev  
 sudo pip install feedparser  
 sudo pip install flask  
 sudo pip install argparse  
-sudo apt-get install libusb-dev  
 sudo pip install bitarray  
 sudo pip install pillow  
 sudo pip install qrcode  
-sudo pip install fclist  
-sudo apt-get install libffi-dev  
-sudo apt-get install python-mysqldb  
-sudo apt-get install python-qt4
+sudo pip install fclist
 
 #Verify Pipsta installation
 cd pipstascripts/  
