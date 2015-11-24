@@ -1,0 +1,9 @@
+  * Re-enable double height text in ticket printed from 'Scratch Game with Certificate' this was disable due to Ap1400 defect (see Ap1400 wishlist)
+  * Make printer_mgr.py windows compatible (Unicode)
+  * From printer manager create a AbleSystemsGenericPrinter (only exposing common public interfaces)
+  * Modify AbleSystemsGenericPrinter to use USBPrintDll if available else fallback to generic USB.
+  * Move the example databases top the new servers.
+  * Port USBPrintDll to Linux, rename to AbleSystemsUsbPrinter.so.0.0.0 (link to .so.0.0 and .so.0)
+  * Rename windows build of USBPrintDll AbleSystemsUsbPrinter.dll
+  * Modify AbleSystemsGenericPrinter to use renamed AbleSystemsUsbPrinter.dll/.so if available else fallback to generic USB.
+  * Produce a new AbleSystemsUsbPrinter.dll that uses windows native USB API

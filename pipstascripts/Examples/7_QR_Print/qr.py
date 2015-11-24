@@ -1,0 +1,1 @@
+../nfc/pipsta/qr_print/qr.py

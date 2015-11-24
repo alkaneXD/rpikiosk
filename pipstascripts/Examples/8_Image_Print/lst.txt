@@ -1,0 +1,7 @@
+image.png
+image_print.py
+lst.txt
+mylog.txt
+programetc.png
+scratch logo_orig_size.png
+wide.png

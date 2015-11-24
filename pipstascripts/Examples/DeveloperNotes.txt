@@ -1,0 +1,10 @@
+pylint
+======
+
+ * This is performed on the target platform (currently Raspbian Linus with python 2.7).
+ * Suggested CLI is 'pylint -f colorized -r n <file_under_test.py>'
+ * Complete report is 'pylint -f colorized <file_under_test.py>'
+ * Test of all files can be done with a line like 'find AP1400-RPi/ -name \(Research\ Work\) -prune -o -name "*.py" -print -exec pylint -f colorized -r n {} \;'
+ * Documentation can be viewed by
+	i)	cd <dir_containing_python_file>
+	ii)	pydoc <python_module_name> - python_module_name is generally python file name without the .py extension.

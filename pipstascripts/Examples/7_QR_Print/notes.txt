@@ -1,0 +1,29 @@
+
+Library Installation (Wheezy)
+=============================
+
+This installs PIL however many pages are recommending that you use pillow instead.  This needs checking out.
+
+Launch a terminal and execute the following commands -
+
+sudo apt-get update
+sudo apt-get install libtiff4-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.5-dev tk8.5-dev python-tk
+sudo apt-get install python-imaging
+sudo apt-get install python-bitarray
+git clone https://github.com/lincolnloop/python-qrcode
+cd python-qrcode
+sudo python setup.py install
+cd ..
+rm -rf python-qrcode
+
+Notes
+=====
+
+1) User is invited to input some data
+2) Data is converted to QR code
+3) QR code is converted to image
+4) Image is scaled-up to give best width whilst maintaining best possible aspect ratio
+
+Outstanding
+===========
+All sources need to be acknowledged in our source code

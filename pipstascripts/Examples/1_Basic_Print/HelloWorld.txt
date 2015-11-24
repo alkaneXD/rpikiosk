@@ -1,0 +1,16 @@
+BasicPrint.py Example
+=====================
+
+This simple demonstration 
+* Establishes communications
+with the printer over USB
+* Opens a file and sends it
+a line at a time.
+
+The printer then prints this
+simple text data.
+
+
+
+
+

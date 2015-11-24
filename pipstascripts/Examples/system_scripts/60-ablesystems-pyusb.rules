@@ -1,0 +1,1 @@
+ATTR{idVendor}=="0483",ATTR{idProduct}=="a053",ACTION=="add",OWNER="pi",SYMLINK+="ap1400"
