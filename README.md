@@ -2,6 +2,13 @@
 
 #INSTALLATION NOTES
 
+#Add Debian Wheezy sources.list to get Debian Wheezy packages
+sudo nano /etc/apt/sources.list  
+deb http://archive.raspbian.org/raspbian wheezy main contrib non-free  
+deb-src http://archive.raspbian.org/raspbian wheezy main contrib non-free
+sudo apt-get upgdate
+sudo apt-get upgrade
+
 #Installing Pipsta Debian packages
 sudo dpkg -i pipstautil.deb
 
@@ -34,6 +41,19 @@ sudo pip install bitarray
 sudo pip install pillow  
 sudo pip install qrcode  
 sudo pip install fclist
+
+#Installing Web Server for Raspberry Pi 2
+sudo apt-get install apache2 php5 libapache2-mod-php5  
+sudo service apache2 restart  
+sudo apt-get install mysql-server mysql-client php5-mysql
+
+#Install FTP for easy Web server upload
+sudo chown -R pi /var/www/  
+sudo apt-get install vsftpd  
+sudo nano /etc/vsftpd.conf  
+write_enable=YES  
+force_dot_files=YES
+ln -s /var/www/ ~/uploadhere
 
 #Verify Pipsta installation
 cd pipstascripts/  
