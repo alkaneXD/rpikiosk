@@ -5,8 +5,8 @@
 #Add Debian Wheezy sources.list to get Debian Wheezy packages
 sudo nano /etc/apt/sources.list  
 deb http://archive.raspbian.org/raspbian wheezy main contrib non-free  
-deb-src http://archive.raspbian.org/raspbian wheezy main contrib non-free
-sudo apt-get upgdate
+deb-src http://archive.raspbian.org/raspbian wheezy main contrib non-free  
+sudo apt-get update  
 sudo apt-get upgrade
 
 #Installing Pipsta Debian packages
