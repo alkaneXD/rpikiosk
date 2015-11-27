@@ -10,17 +10,19 @@ sudo apt-get update
 sudo apt-get upgrade
 
 #Installing Pipsta Debian packages
+sudo apt-get install libusb-dev  
 sudo dpkg -i pipstautil.deb
 
 #Installing wiringPi (controlling GPIO via Web)
 cd wiringPi/  
-./build
+sh ./build
 
 #Verify wiringPi installation
 gpio readall
 
 #Installing pyusb
-python setupy.py install
+cd pyusb/  
+sudo python setup.py install
 
 #Installing Pipsta permissions
 cd pipstascripts/Examples/system_scripts  
@@ -33,7 +35,6 @@ sudo apt-get install python-pip python-dev
 sudo apt-get install libffi-dev  
 sudo apt-get install python-mysqldb 
 sudo apt-get install python-qt4  
-sudo apt-get install libusb-dev  
 sudo pip install feedparser  
 sudo pip install flask  
 sudo pip install argparse  
@@ -48,12 +49,12 @@ sudo service apache2 restart
 sudo apt-get install mysql-server mysql-client php5-mysql
 
 #Install FTP for easy Web server upload
-sudo chown -R pi /var/www/  
+sudo chown -R pi /var/www/html  
 sudo apt-get install vsftpd  
 sudo nano /etc/vsftpd.conf  
 write_enable=YES  
 force_dot_files=YES
-ln -s /var/www/ ~/uploadhere
+ln -s /var/www/html ~/uploadhere
 
 #Verify Pipsta installation
 cd pipstascripts/  
