@@ -53,7 +53,7 @@ sudo chown -R pi /var/www/html
 sudo apt-get install vsftpd  
 sudo nano /etc/vsftpd.conf  
 write_enable=YES  
-force_dot_files=YES
+force_dot_files=YES  
 ln -s /var/www/html ~/uploadhere
 
 #Verify Pipsta installation
@@ -72,4 +72,4 @@ sudo nano ~/.config/lxsession/LXDE-pi/autostart
 #Screensaver and Blanking disabler
 sudo apt-get install xscreensaver
 
-#Credits to wiringPi developer, Python developers and Pipsta Thermal Printer Developers. Hoping that, me and my team will pass the capstone project. God bless us.
+#Credits to wiringPi developer, Python developers and Pipsta Thermal Printer Developers. God bless us.
