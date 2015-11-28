@@ -33,7 +33,7 @@ sudo reboot
 #Required packages for Pipsta
 sudo apt-get install python-pip python-dev  
 sudo apt-get install libffi-dev  
-sudo apt-get install python-mysqldb 
+sudo apt-get install python-mysqldb  
 sudo apt-get install python-qt4  
 sudo pip install feedparser  
 sudo pip install flask  
